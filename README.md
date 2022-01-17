@@ -12,16 +12,16 @@ Tailwindcss is CSS fremework that i installed through npm (Node Package Manager)
 If you are not Developer, you will need Code Editor App, because you need to open your own code. If you have mid-tier laptop/computer i sugess you to install Sublime Text 3 as your Code Editor, because that the lightweight app i ever use. And if you have high-tier laptop/computer just install Visual Studio Code, that is the most feature-rich code editor.
 
 
-https://code.visualstudio.com/
+[Sublime Text 3](https://www.sublimetext.com/3)
 
-https://www.sublimetext.com/3
+[Visual Studio Code](https://code.visualstudio.com/ )
 
 
 ## Installing npm and NodeJs
 
 Npm is not a tools that can work in independently, npm need NodeJs for their base program languange to make it works. So please follow the instruction below:
 
-1. Visit NodeJs Website in download page https://nodejs.org/en/download/
+1. Visit [NodeJs Website](https://nodejs.org/en/download/)
 2. Choose the verison based on:
    - Your system operation, 
    - Your bit processors,
@@ -31,20 +31,32 @@ Npm is not a tools that can work in independently, npm need NodeJs for their bas
    - Click the NodeJs installer file
    - System will ask if you want to run the software, click Run.
    - You will be welcomed to the Node.js Setup Wizard, click Next.
+   
    ![This is an image](https://blogs.masterweb.com/files/2020/05/Wizard.jpg)
+   
    - On the next screen, checked the license agreement, and click Next.
+   
     ![This is an image](https://blogs.masterweb.com/files/2020/05/Accept-terms.jpg)
+    
    - The installer will prompt you for the installation location. Leave the default location, unless you have a specific location to install it somewhere else, then click Next.
+   
     ![This is an image](https://blogs.masterweb.com/files/2020/05/Destination-folder.jpg)
-   -The wizard will let you select custom service, we just need Node.js runtime, npm, then click Next.
+   
+   - The wizard will let you select custom service, we just need Node.js runtime, npm, then click Next.
+   
     ![This is an image](https://blogs.masterweb.com/files/2020/05/Custom-setup.jpg)
+    
    - Finally, click the Install button to run the installer. When it finishes, click Finish.
+   
    ![This is an image](https://blogs.masterweb.com/files/2020/05/Install.jpg)
+   
 4. Always check if the NodeJs and npm already installed or not
    - Open your Command Prompt
    - Type "node -v", then click Enter, if you see node js version its already installed
    - Type "npm -v", then click Enter, if you see node js version its already installed
+  
    ![This is an image](https://blogs.masterweb.com/files/2020/05/Cek-versi-node-js-dan-npm.jpg)
+  
 5. To updating this sofeware you just need to download the latest version and install it again, your system will replace the version again.
 
 
@@ -62,12 +74,15 @@ What are we going to do is updating the base code of Tailwindcss. Because the pr
 2. If you noticed, there is a file named "package.json", if the file is exists, then you are in the right location.
 3. Open the package.json with your Sublime Text 3/Visual Studio Code
 4. In that package.json you will see the version of Tailwindcss, in the "devDependencies" line.
-5. Compare your Tailwindcss version with the current version on their website: https://tailwindcss.com/docs/installation, you can see the version on the navbar
-6. If your version is smaller, then you need to update.
-7. Open your Command Prompt on your project location.
-8. Type "npm update".
-9. The loading progress will apper on your Command Prompt, wait until is finish.
-10. And finally, you just updated your Base Tailwindcss.
+5. Compare your Tailwindcss version with the current version on their [website](https://tailwindcss.com/docs/installation), you can see the version on the navbar
+
+![llll](https://user-images.githubusercontent.com/49015080/149788965-8437e7da-e236-4253-a6e1-d10eedff71f9.png)
+
+7. If your version is smaller, then you need to update.
+8. Open your Command Prompt on your project location.
+9. Type `npm update`
+10. The loading progress will apper on your Command Prompt, wait until is finish.
+11. And finally, you just updated your Base Tailwindcss.
    
    
 ## Updateing Production Tailwindcss
@@ -83,21 +98,31 @@ Actually this method is called "Watch" more than "Update", so the Tailwindcss ca
 3. Go back again to root of your project location
 4. You will see there is a file named "tailwind.config.js" that the setting file we needed for making production Tailwindcss
 5. Open that file with your Sublime Text 3/Visual Studio Code
-6. Take a look at ["./public/**/*.html"], that is your HTML file location, this fuction code "**/*.html" is going to find any HTML file in your public folder        so don't remove it. Public folder is the base location i always used to store my HTML file, if you change or move the HTML file, you need to change the            location based on your own index.html location, for example if you move it on "/public/my_page" just change to ["./public/my_page/**/*.html"]
-7. Close your tailwind.config.js if your HTML file in the right location
-8. Open Command Prompt and type "npx tailwindcss -i ./public/assets/base/tailwindcss/input.css -o ./public/assets/base/tailwindcss/output.css --watch" The first      location is your input.css location and the second is your output.
-9. After that. just click enter and now your Tailwindcss is begin to do the watch process
-   
-Note:
-Remember, the watch process is always on when you activated it, don't close your Command Prompt when your Tailwindcss in watch mode, unless you turn it on off. But why it's always on? Because the Developer always need to get the new class when they are create the website. Everytime you add/remove class in your index.html and save it again, Tailwindcss will add/remove your class in Production Tailwindcss.
 
-Tips:
-Do you think the syntax for watch Tailwindcss is too long? Actually you can short it. If you open your "package.json" file, you will noticed in the "scripts" line, there's a same syntax but warped with: "tailwind-watch": "npx tailwindcss -i ./public/assets/base/tailwindcss/input.css -o ./public/assets/base/tailwindcss/output.css --watch". If you type "npm run tailwind-watch" in Command Prompt, Tailwindcss will run the watch process. Why? because i am alreay made my own npm function that called "tailwind-watch" the inside of that function is the long Tailwindcss watch syntax.
+![Scssd](https://user-images.githubusercontent.com/49015080/149789339-28335ffa-f5d7-4439-9c7b-45da5778de37.png)
+
+7. Take a look at `["./public/**/*.html"]`, that is your HTML file location, this fuction code `**/*.html` is going to find any HTML file in your public folder so don't remove it. Public folder is the base location i always used to store my HTML file, if you change or move the HTML file, you need to change the location based on your own index.html location, for example if you move it on `/public/my_page` just change to `["./public/my_page/**/*.html"]`
+8. Close your tailwind.config.js if your HTML file in the right location
+9. Open Command Prompt and type `npx tailwindcss -i ./public/assets/base/tailwindcss/input.css -o ./public/assets/base/tailwindcss/output.css --watch` The first location is your input.css location and the second is your output.
+
+![Screenshot_2022-01-17_21-40-32](https://user-images.githubusercontent.com/49015080/149789802-4e0d68ba-e265-45ff-ad17-8db73572a52c.png)
+
+11. After that. just click enter and now your Tailwindcss is begin to do the watch process
+   
+### Note
+Remember, keep the watch process turn on when you activated it, don't close your Command Prompt when your Tailwindcss in watch mode, unless you turn it off with `CTRL + C`. But why it's always on? Because the Developer always need to get the new class when they are create the website. Everytime you add/remove class in your index.html and save it again, Tailwindcss will add/remove your class in Production Tailwindcss.
+
+### Tips
+Do you think the syntax for watch Tailwindcss is too long? Actually you can short it. If you open your "package.json" file, you will noticed in the "scripts" line 
+
+![Screenshot_2022-01-17_22-22-38](https://user-images.githubusercontent.com/49015080/149796832-037ec7a3-f8bd-4aa8-ab32-3bee7ad883fd.png)
+
+There's a same syntax but warped with: `"tailwind-watch": "npx tailwindcss -i ./public/assets/base/tailwindcss/input.css -o ./public/assets/base/tailwindcss/output.css --watch"`. If you type `npm run tailwindcss-watch` in Command Prompt, Tailwindcss will run the watch process. Because i am alreay made my own npm function that called "tailwindcss-watch" the inside of that function is the long Tailwindcss watch syntax.
 
 
 ## Updating Minify Tailwindcss
    
-Minify CSS is smaller version of css file, this is the best type of CSS if you want to put in the production use in my opinion. The main different from normal    CSS is the extension name, Minify CSS have extension name .min.css. There's a lot of website in the internet can minify your css just search it on goggle, you    can use their service, lets get started:
+Minify CSS is smaller version of css file, this is the best type of CSS if you want to put in the production use in my opinion. The main different from normal    CSS is the extension name, Minify CSS have extension name .min.css. There's a lot of website in the internet can minify your css just search it on goggle, you    can use their service, let's get started:
    
 1. Find a website that provide minify-css service
 2. If you ask me, i will choose https://www.toptal.com/developers/cssminifier/ because compare to other site, that site didn't have ads, have a simple page, and      large textbox perfect to copy my css
@@ -110,7 +135,8 @@ Minify CSS is smaller version of css file, this is the best type of CSS if you w
 9. Open My_Project/public/base/tailwindcss
 10. Find output.min.css
 11. Open that file
-12. Paste your minify-css result to repalace the old with new one
+12. Remove all of the old code
+13. Paste your minify-css in alpine.min.js
 
 
 ## Updating Alpinejs
