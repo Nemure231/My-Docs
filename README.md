@@ -12,6 +12,11 @@ Tailwindcss is CSS fremework that i installed through npm (Node Package Manager)
 If you are not Developer, you will need Code Editor App, because you need to open your own code. If you have mid-tier laptop/computer i sugess you to install Sublime Text 3 as your Code Editor, because that the lightweight app i ever use. And if you have high-tier laptop/computer just install Visual Studio Code, that is the most feature-rich code editor.
 
 
+https://code.visualstudio.com/
+
+https://www.sublimetext.com/3
+
+
 ## Installing npm and NodeJs
 
 Npm is not a tools that can work in independently, npm need NodeJs for their base program languange to make it works. So please follow the instruction below:
@@ -26,14 +31,20 @@ Npm is not a tools that can work in independently, npm need NodeJs for their bas
    - Click the NodeJs installer file
    - System will ask if you want to run the software, click Run.
    - You will be welcomed to the Node.js Setup Wizard, click Next.
-   - On the next screen, review the license agreement, click Next.
-   - The installer will prompt you for the installation location. Leave the default location, unless you have a specific location to install it somewhere else –          then click Next.
-   - The wizard will let you select components to include or remove from the installation. Accept the defaults by clicking Next.
+   ![This is an image](https://blogs.masterweb.com/files/2020/05/Wizard.jpg)
+   - On the next screen, checked the license agreement, and click Next.
+    ![This is an image](https://blogs.masterweb.com/files/2020/05/Accept-terms.jpg)
+   - The installer will prompt you for the installation location. Leave the default location, unless you have a specific location to install it somewhere else, then click Next.
+    ![This is an image](https://blogs.masterweb.com/files/2020/05/Destination-folder.jpg)
+   -The wizard will let you select custom service, we just need Node.js runtime, npm, then click Next.
+    ![This is an image](https://blogs.masterweb.com/files/2020/05/Custom-setup.jpg)
    - Finally, click the Install button to run the installer. When it finishes, click Finish.
+   ![This is an image](https://blogs.masterweb.com/files/2020/05/Install.jpg)
 4. Always check if the NodeJs and npm already installed or not
    - Open your Command Prompt
    - Type "node -v", then click Enter, if you see node js version its already installed
    - Type "npm -v", then click Enter, if you see node js version its already installed
+   ![This is an image](https://blogs.masterweb.com/files/2020/05/Cek-versi-node-js-dan-npm.jpg)
 5. To updating this sofeware you just need to download the latest version and install it again, your system will replace the version again.
 
 
