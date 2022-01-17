@@ -96,7 +96,7 @@ You need to update your Production Tailwindcss not only because there's a newers
 
 > We just get what we need to use 
 
-Before that don't need "font-bold" but now i need it. How can i get the "font-bold" class in Production Tailwindcss? **We can get it in Base Tailwindcss. In Base Tailwindcss, they have all of the class, including "font-bold". So all we need to do is get the "font-bold" in Base Tailwindcss and put it into Production Tailwindcss.**
+Before that i don't need "font-bold" but i need it now. How can i get the "font-bold" class in Production Tailwindcss? **I can get it in Base Tailwindcss. In Base Tailwindcss, they have all of the class, including "font-bold". So all we need to do is get the "font-bold" in Base Tailwindcss and put it into Production Tailwindcss.**
 
 Actually this method is called "Watch" more than "Update", so the Tailwindcss can "Watch" our HTML file, and if there's a new class, Production Tailwindcss will get that class in Base Tailwindcss and add that class automatically. That's it's. Lets get started how to update/watch:
    
